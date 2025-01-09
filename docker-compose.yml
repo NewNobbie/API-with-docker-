@@ -1,0 +1,7 @@
+version: "3.8" # Specifies the Docker Compose file format version
+
+services: # Defines the services to be run
+  phrase_generator: # Name of the service
+    build: . # Indicates that Docker should build the image from the current directory (Dockerfile is required)
+    stdin_open: true # Keeps the standard input (stdin) open for the service, allowing user interaction
+    tty: true # Allocates a pseudo-TTY, enabling an interactive terminal for the container
